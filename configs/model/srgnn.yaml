@@ -1,0 +1,11 @@
+_target_: src.models.srgnn_module.SRGNN
+lr: 0.001
+l2: 1e-5
+lr_dc_step: 3
+lr_dc: 0.1
+top_k: 20
+
+model:
+  _target_: src.models.components.srgnn.GNNModel
+  hidden_size: 100
+  n_node: 43097
